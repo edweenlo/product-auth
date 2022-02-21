@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Authentication</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openRegion(event, 'UnitedStates')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>United States</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'LatinAmerica')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>Latin America</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'Canada')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>Canada</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'MiddleEast')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>Middle East</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'TPD')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>TPD</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'China')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>China</h4>
+      </button>
+      <button class="tablinks" onclick="openRegion(event, 'Outdated')">
+        <img src="/images/blank-bottle.png" alt="blank bottle">
+        <h4>Outdated</h4>
+      </button>
+    </div>
     
+    <div id="UnitedStates" class="tabcontent">
+      <div class="content-left">
+        <hr>
+        <h3>United States</h3>
+      </div>
+      <div class="content-right">
+      <h4>Features</h4>
+      <ul>
+          <li>Stamped with "USA Vape Lab" on the cap</li>
+          <li>Child-resistant cap</li>
+          <li>Scannable QR code for authenticity verification</li>
+      </ul>
+        <img src="/images/blank-bottle-trio.png" alt="blank bottle trio">
+        <hr>
+        <h4>Current<br>60 mL Freebase</h4>
+    </div>
+    </div>
+    
+    <div id="LatinAmerica" class="tabcontent">
+      <h3>Latin America</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+    
+    <div id="Canada" class="tabcontent">
+      <h3>Canada</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>    
+
+    <div id="MiddleEast" class="tabcontent">
+        <h3>Middle East</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="TPD" class="tabcontent">
+        <h3>TPD</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="China" class="tabcontent">
+        <h3>China</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>    
+
+      <div id="Outdated" class="tabcontent">
+        <h3>Outdated</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>    
+
+    <script src="/script.js"></script>
 </body>
 </html>

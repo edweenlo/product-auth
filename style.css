@@ -1,0 +1,63 @@
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #DDDDDD;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  flex-grow: 1;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* slide content */
+.content-left {
+  background-color: yellow;
+  overflow: hidden;
+  position: relative;
+  width: 10%;
+}
+.content-left h3 {
+  transform: rotate(90deg);
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  font-size: 3rem;
+}
+.content-right {
+  width: 90%;
+  background-color: pink;
+}
